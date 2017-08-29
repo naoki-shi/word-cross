@@ -1,0 +1,15 @@
+<h1 class="settings-words">語群  (<%= @wordsNumber %>words)</h1>
+<ul class="add-words">
+    <h1>新規追加</h1>
+    
+<%= form_tag "/settings/words/create" do %>
+    <input type="text" name="content">
+    <input type="submit" value="追加" name="words">
+<% end %>
+</ul>
+
+<ul class="words">
+    <% @words.each do |word| %>
+    <li><%= word.content %></li>
+    <% end %>
+</ul>

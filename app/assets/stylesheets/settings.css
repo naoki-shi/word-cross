@@ -1,0 +1,19 @@
+.settings>h1{
+    font-size: 40px;
+}
+
+.settings>li{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.settings>li:hover{
+    background-color: antiquewhite;
+    transition: 0.2s;
+}
+
+.settings>li>a{
+    font-size: 24px;
+    color: black;
+    background-color: lightcyan;
+}
