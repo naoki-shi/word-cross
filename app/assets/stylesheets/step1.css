@@ -2,12 +2,13 @@
     text-align: center;
 }
 
-.step1>li{
-    font-size: 18px;
+.step1>span{
+    font-size: 30px;
+    margin-bottom: 40px;
 }
 
 .start2{
-    margin-top: 20px;
+    margin-top: 50px;
   display:inline-block;
     
     font:normal normal 300 1.3em 'Open Sans';

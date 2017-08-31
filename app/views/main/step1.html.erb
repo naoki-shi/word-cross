@@ -3,7 +3,7 @@
     <%= form_tag "/step2" do %>
     <% 5.times do |i| %>
     <% @word= Word.find(Word.pluck(:id).sample).content %>
-    <li><%= @keyword %> + <%= @word %></li>
+    <li style=margin-top:10px><%= @keyword %> + <%= @word %></li>
     <li>
         <input type="text" name="answer<%= i %>">
     </li>
