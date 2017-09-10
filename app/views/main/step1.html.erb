@@ -1,5 +1,15 @@
 <ul class="step1">
-    <span>下の２つの単語を繋げて１つの言葉にしてください。</span>
+    <span>下の２つの単語からどんなアイデアが浮かびますか？</span>
+    
+    <% @word = (1..(Word.count)).to_a.sort_by{rand}[1..5] %>
+    <li class="set1"><%= @keyword %> + <%= @word1 = Word.find(@word[0]).content %></li>
+    <li class="set1"><%= @keyword %> + <%= @word2 = Word.find(@word[1]).content %></li>
+    <li class="set1"><%= @keyword %> + <%= @word3 = Word.find(@word[2]).content %></li>
+    <li class="set1"><%= @keyword %> + <%= @word4 = Word.find(@word[3]).content %></li>
+    <li class="set1"><%= @keyword %> + <%= @word5 = Word.find(@word[4]).content %></li>
+    
+<!--
+    
     <%= form_tag "/step2" do %>
     <% 5.times do |i| %>
     <% @word= Word.find(Word.pluck(:id).sample).content %>
@@ -8,6 +18,8 @@
         <input type="text" name="answer<%= i %>">
     </li>
     <% end %>
+-->
 <!--    <input type="submit" value="Next →" name="goStep2" class="start2">-->
     <% end %>
+
 </ul>
