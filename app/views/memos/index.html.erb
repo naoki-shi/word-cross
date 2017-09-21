@@ -1,0 +1,20 @@
+<div class="settings-memo">
+  <h1>メモ一覧</h1>
+    <% if @memos.present? %>
+    
+    <% @memos.each do |memo| %>
+    <ul>
+      <li><%= memo.title %></li>
+      <li><%= memo.word1 %>　×　</li>
+      <li><%= memo.word2%></li>
+      <li><%= memo.content %></li>
+      <li><%= link_to "削除", memo, method: :delete, data: {confirm: '本当に削除しますか？'} %></li>
+      <hr>
+    </ul>
+    <% end %>
+    
+    <% else %>
+    <p>保存されたメモはありません。</p>
+    <% end %>
+  
+</div>

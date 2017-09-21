@@ -1,0 +1,24 @@
+.settings-memo>h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.settings-memo>ul{
+    margin-bottom: 20px;
+}
+
+.settings-memo>ul>li{
+    margin-top: 5px;
+}
+
+.settings-memo>ul>li:first-child{
+    font-size: 26px;
+}
+
+.settings-memo>ul>li:nth-child(2){
+    float: left;
+}
+
+.settings-memo>ul>li:nth-child(3){
+    
+}
