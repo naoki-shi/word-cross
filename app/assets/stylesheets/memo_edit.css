@@ -1,0 +1,135 @@
+.memo_edit{
+/*    z-index: 2;*/
+    float: left;
+    width:90%;
+/*
+    filter:alpha(opacity=90);
+    -moz-opacity:0.90;
+    opacity:0.90;
+*/
+}
+
+
+.memo-title{
+    width: 60%;
+    height: 50px;
+    margin: 30px auto;
+    display: block;
+    font-size: 40px;
+    text-align: center;
+    color: black;
+}
+
+.word1{
+    width: 30%;
+    height: 40px;
+    float: left;
+    font-size: 32px;
+    text-align: center;
+    margin-left: 10%;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.memo_edit>form>span{
+    font-size: 50px;
+    line-height: 50px;
+    float: left;
+    padding-top: 10px;
+    margin: 0 5%;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.word2{
+    width: 30%;
+    height: 40px;
+    float: right;
+    font-size: 32px;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+
+/*
+.memo_edit-title, .word1, .word2, .memo_edit>form>textarea:placeholder-shown{
+    font-size: 20px;
+    margin-top: 10px;
+}
+*/
+
+.memo-title, .word1, .word2, .memo_edit>form>textarea::-webkit-input-placeholder {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.memo_edit input[type="text"]{
+    border: 1px solid #bbb;
+}
+
+.memo_edit textarea,
+.memo_edit select
+{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 2%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+
+.memo_edit textarea{
+    height: 600px;
+    font-size: 20px;
+}
+
+.memo_edit>form>textarea{
+    width: 100%;
+    height: 400px;
+    font-size: 20px;
+}
+
+
+.memo_edit input[type="text"]:focus,
+.memo_edit textarea:focus,
+.memo_edit select:focus
+{
+    box-shadow: 0 0 5px #43D1AF;
+    border: 1px solid #43D1AF;
+    transition: 0.5s;
+}
+
+.memo_edit input[type="submit"],
+.memo_edit input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 30%;
+    height: 60px;
+    font-size: 20px;
+    line-height: 60px;
+/*    padding: 3%;*/
+    margin-left: 35%;
+    background: #43D1AF;
+    border-bottom: 2px solid #30C29E;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;    
+    color: #fff;
+}
+
+.memo_edit input[type="submit"]:hover,
+.memo_edit input[type="button"]:hover{
+    background: #2EBC99;
+}

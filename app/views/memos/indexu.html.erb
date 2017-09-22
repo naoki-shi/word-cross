@@ -8,7 +8,9 @@
       <li><%= memo.word2%></li>
       <li><%= memo.content %></li>
       <li><%= memo.updated_at %></li>
+      <li><%= link_to "編集", [:edit, memo] %></li>
       <li><%= link_to "削除", memo, method: :delete, data: {confirm: '本当に削除しますか？'} %></li>
+      
       <hr>
     </ul>
     <% end %>  

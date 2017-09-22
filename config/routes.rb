@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   post '/settings/words/create' => 'words#create'
   
     
-  resources :memos, only: [:destroy]  
+  resources :memos, only: [:destroy, :edit, :update] 
   post '/memos/create' => 'memos#create'
   get '/memos/index' => 'memos#indexu'
   get '/settings/memos' => 'memos#index'

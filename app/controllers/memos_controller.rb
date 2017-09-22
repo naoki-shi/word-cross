@@ -1,7 +1,7 @@
 class MemosController < ApplicationController
     
     def index
-        @memos = Memo.all.order(id: :desc)
+        @memos = Memo.all.order(updated_at: :desc)
     end
     
         
@@ -9,7 +9,7 @@ class MemosController < ApplicationController
        @memo_ids = session[:memo_ids]
        
       if @memo_ids.present?
-       @memos = Memo.find(@memo_ids)
+       @memos = Memo.order(updated_at: :desc).find(@memo_ids)
       end
         
     end
@@ -37,6 +37,20 @@ class MemosController < ApplicationController
         session[:memo_ids].delete(@memo.id)
         
         redirect_to '/memos/index', notice: "メモを削除しました。"
+    end
+    
+    def edit
+        @memo = Memo.find(params[:id])
+    end
+    
+    def update
+       @memo = Memo.find(params[:id])
+       @memo.assign_attributes(title:params[:title],word1:params[:word1],word2:params[:word2],content:params[:content])
+       if @memo.save
+           redirect_to '/memos/index' , notice: "メモを更新しました。"
+       else
+           render "edit"
+       end
     end
         
 end
