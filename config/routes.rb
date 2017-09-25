@@ -20,5 +20,7 @@ Rails.application.routes.draw do
   post '/step1' => 'main#step1'
   post '/step2' => 'main#step2'
 
+    
+  get '/201303053/tickets' => 'admin#tickets'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

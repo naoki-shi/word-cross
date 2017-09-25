@@ -1,3 +1,5 @@
+<% if session[:admin_tickets].present? %>
+
 <h1 class="settings-words">語群  (<%= @wordsNumber %>words)</h1>
 <ul class="add-words">
     <h1>新規追加</h1>
@@ -13,3 +15,7 @@
     <li><%= word.content %></li>
     <% end %>
 </ul>
+
+<% else %>
+<p>不正なアクセスです。</p>
+<% end %>
