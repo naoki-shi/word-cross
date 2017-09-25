@@ -16,6 +16,8 @@ module WordCross
       config.time_zone = 'Tokyo'
       config.active_record.time_zone_aware_types = [:datetime, :time]
       
+      protect_from_forgery :except => :complete
+      
 #      config.action_controller.permit_all_parameters = true
   end
 end
