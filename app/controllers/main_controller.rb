@@ -1,5 +1,8 @@
 class MainController < ApplicationController  
   def step1
+      @keyword = Keyword.new(keyword:params[:keyword])
+      @keyword.save
+      
       @keyword = params[:keyword]
   end
     

@@ -1,0 +1,11 @@
+<% if session[:admin_tickets].present? %>
+<h1><%= @keywordsNumber %>tries</h1>
+<ul class="words">
+    <% @keywords.each do |keyword| %>
+    <li><%= keyword.keyword %></li>
+    <% end %>
+</ul>
+
+<% else %>
+<p>不正なアクセスです。</p>
+<% end %>

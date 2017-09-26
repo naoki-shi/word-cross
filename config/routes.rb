@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get '/settings' => 'home#settings'
   get '/settings/words' => 'words#index'
   post '/settings/words/create' => 'words#create'
+  get '/settings/keywords' => 'keyword#index'
   
     
   resources :memos, only: [:destroy, :edit, :update] 
@@ -16,7 +17,7 @@ Rails.application.routes.draw do
   get '/memos/index' => 'memos#indexu'
   get '/settings/memos' => 'memos#index'
   
-    
+
   post '/step1' => 'main#step1'
   post '/step2' => 'main#step2'
 
