@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get '/settings/memos' => 'memos#index'
   
 
+  resources :keyword, only: [:destroy]
   post '/step1' => 'main#step1'
   post '/step2' => 'main#step2'
 

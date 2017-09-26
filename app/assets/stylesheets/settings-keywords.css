@@ -1,0 +1,13 @@
+.settings-keywords>h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.settings-keyword{
+    float: left;
+    width: 200px;
+}
+
+.settings-keywords>li{
+    margin-bottom: 3px;
+}

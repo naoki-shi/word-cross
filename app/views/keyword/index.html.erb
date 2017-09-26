@@ -1,8 +1,10 @@
 <% if session[:admin_tickets].present? %>
-<h1><%= @keywordsNumber %>tries</h1>
-<ul class="words">
+<ul class="settings-keywords">
+    <h1><%= @keywordsNumber %>tries</h1>
     <% @keywords.each do |keyword| %>
-    <li><%= keyword.keyword %></li>
+    <li class="settings-keyword"><%= keyword.keyword %></li>
+    <li><%= link_to "削除", keyword, method: :delete, data: {confirm: '本当に削除しますか？'} %></li>
+    <hr>
     <% end %>
 </ul>
 
