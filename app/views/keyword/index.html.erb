@@ -1,12 +1,15 @@
 <% if session[:admin_tickets].present? %>
+<h1 class="settings-keywords-h1"><%= @keywordsNumber %>tries</h1>
+
+<% @keywords.each do |keyword| %>
 <ul class="settings-keywords">
-    <h1><%= @keywordsNumber %>tries</h1>
-    <% @keywords.each do |keyword| %>
-    <li class="settings-keyword"><%= keyword.keyword %></li>
+    <li><%= keyword.keyword %></li>
+    <li><%= keyword.created_at %></li>
     <li><%= link_to "削除", keyword, method: :delete, data: {confirm: '本当に削除しますか？'} %></li>
-    <hr>
-    <% end %>
 </ul>
+<hr>
+<% end %>
+
 
 <% else %>
 <p>不正なアクセスです。</p>

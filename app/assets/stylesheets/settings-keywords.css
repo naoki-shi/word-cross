@@ -1,13 +1,18 @@
-.settings-keywords>h1{
+.settings-keywords-h1{
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-.settings-keyword{
+.settings-keywords>li:first-child{
     float: left;
-    width: 200px;
+    width: 150px;
 }
 
 .settings-keywords>li{
     margin-bottom: 3px;
+}
+
+.settings-keywords>li:nth-child(2){
+    float: left;
+    margin-right: 50px;
 }
