@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   root 'home#top'
   get '/about' => 'home#about'
+  get '/home/keywordManual' => 'home#keywordManual'
     
   get '/settings' => 'home#settings'
   get '/settings/words' => 'words#index'

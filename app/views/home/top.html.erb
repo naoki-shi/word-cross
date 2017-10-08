@@ -1,6 +1,6 @@
 <ul class="main">
     <h1>アイデアを作る</h1>
-    <span>キーワードを入力して、始めよう！</span>
+    <span>キーワードを入力して、始めよう！ <br> <%= link_to "キーワードが決まらない場合", '/home/keywordManual' %></span>
     <%= form_tag "/step1" do %> 
     <input type="text" name="keyword" class="form1">
     <input type="submit" value="始める" name="start" class="start1">

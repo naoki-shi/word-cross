@@ -1,0 +1,20 @@
+.keywordManual>h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.keywordManual>ul{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.keywordManual>h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.keywordManual>div{
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 18px;
+}
