@@ -16,12 +16,11 @@
 
 .start2{
     margin-top: 50px;
-  display:inline-block;
+    display:inline-block;
     
     font:normal normal 300 1.3em 'Open Sans';
     text-decoration:none;   
     
-/*    color:rgba(28, 190, 131, 1);*/
     color: limegreen;
     brackground-color:transparent;
     border:1px solid rgba(28, 190, 131, 1);

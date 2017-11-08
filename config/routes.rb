@@ -21,6 +21,8 @@ Rails.application.routes.draw do
 
   resources :keyword, only: [:destroy]
   post '/step1' => 'main#step1'
+  post '/step1-NoKey' => 'main#step1-NoKey'
+  get '/step1-NoKey' => 'main#step1-NoKey'
   post '/step2' => 'main#step2'
 
     

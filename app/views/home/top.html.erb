@@ -6,5 +6,10 @@
     <input type="submit" value="始める" name="start" class="start1">
     <% end %>
 </ul>
-<br>
+
+<%= form_tag "/step1-NoKey" do %>
+<input type="submit" value="キーワードなしで始める" class="start-NoKey">
+<% end %>
+<br class="clearBoth">
+<hr>
 <p>※メモ機能を利用するには、Cookieを有効にする必要があります。</p>

@@ -1,0 +1,26 @@
+<ul class="step1">
+    <span>下の２つの単語からどんなアイデアが浮かびますか？</span>
+    
+    <% @word = (1..(Word.count)).to_a.sort_by{rand}[1..10] %>
+    <li class="set1"><%= @word1 = Word.find(@word[0]).content %> + <%= @word2 = Word.find(@word[1]).content %></li>
+    
+    <br>
+    <%= form_tag "/step1-NoKey" do %>
+<input type="submit" value="次の組み合わせ" class="start-NoKey">
+<% end %>
+    
+<!--
+    
+    <%= form_tag "/step2" do %>
+    <% 5.times do |i| %>
+    <% @word= Word.find(Word.pluck(:id).sample).content %>
+    <li style=margin-top:10px><%= @keyword %> + <%= @word %></li>
+    <li>
+        <input type="text" name="answer<%= i %>">
+    </li>
+    <% end %>
+-->
+<!--    <input type="submit" value="Next →" name="goStep2" class="start2">-->
+    <% end %>
+
+</ul>
